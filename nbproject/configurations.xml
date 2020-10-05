@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="88">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f5" displayName="AI" projectFiles="true">
+        <itemPath>CFindTileTypeProblem.h</itemPath>
+        <itemPath>CPathFindingProblem.h</itemPath>
+        <itemPath>CPathFindingStateSpace.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Code Library" projectFiles="true">
+        <itemPath>DrawingFunctions.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Game" projectFiles="true">
+        <itemPath>CCity.h</itemPath>
+        <itemPath>CCivilization.h</itemPath>
+        <itemPath>CUnit.h</itemPath>
+        <itemPath>DataSetup.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Managers" projectFiles="true">
+        <itemPath>CDebugLogging.h</itemPath>
+        <itemPath>CEventsManager.h</itemPath>
+        <itemPath>CFontsManager.h</itemPath>
+        <itemPath>CSoundManager.h</itemPath>
+        <itemPath>CStateManager.h</itemPath>
+        <itemPath>CSurfaceManager.h</itemPath>
+        <itemPath>CTilesetManager.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Mapping" projectFiles="true">
+        <itemPath>CBinaryHeap.h</itemPath>
+        <itemPath>CMap.h</itemPath>
+        <itemPath>CPath.h</itemPath>
+        <itemPath>CTile.h</itemPath>
+      </logicalFolder>
+      <itemPath>CApp.h</itemPath>
+      <itemPath>CCamera.h</itemPath>
+      <itemPath>CEvent.h</itemPath>
+      <itemPath>CFramerate.h</itemPath>
+      <itemPath>CGame.h</itemPath>
+      <itemPath>CState.h</itemPath>
+      <itemPath>CSurface.h</itemPath>
+      <itemPath>Define.h</itemPath>
+      <itemPath>Define_Sounds.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <logicalFolder name="maps" displayName="maps" projectFiles="true">
+        <itemPath>maps/1.map</itemPath>
+        <itemPath>maps/1.map.ORIG</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f5" displayName="AI" projectFiles="true">
+        <itemPath>CFindTileTypeProblem.cpp</itemPath>
+        <itemPath>CPathFindingProblem.cpp</itemPath>
+        <itemPath>CPathFindingStateSpace.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Code Library" projectFiles="true">
+        <itemPath>DrawingFunctions.cpp</itemPath>
+        <itemPath>alphaBlit.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Game" projectFiles="true">
+        <itemPath>CCity.cpp</itemPath>
+        <itemPath>CCivilization.cpp</itemPath>
+        <itemPath>CUnit.cpp</itemPath>
+        <itemPath>DataSetup.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Managers" projectFiles="true">
+        <itemPath>CDebugLogging.cpp</itemPath>
+        <itemPath>CEventsManager.cpp</itemPath>
+        <itemPath>CFontsManager.cpp</itemPath>
+        <itemPath>CSoundManager.cpp</itemPath>
+        <itemPath>CStateManager.cpp</itemPath>
+        <itemPath>CSurfaceManager.cpp</itemPath>
+        <itemPath>CTilesetManager.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Mapping" projectFiles="true">
+        <itemPath>CBinaryHeap.cpp</itemPath>
+        <itemPath>CMap.cpp</itemPath>
+        <itemPath>CPath.cpp</itemPath>
+        <itemPath>CTile.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>CApp.cpp</itemPath>
+      <itemPath>CCamera.cpp</itemPath>
+      <itemPath>CEvent.cpp</itemPath>
+      <itemPath>CFramerate.cpp</itemPath>
+      <itemPath>CGame.cpp</itemPath>
+      <itemPath>CGame_Initialize.cpp</itemPath>
+      <itemPath>CGame_Loop.cpp</itemPath>
+      <itemPath>CGame_OnEvent.cpp</itemPath>
+      <itemPath>CState.cpp</itemPath>
+      <itemPath>CSurface.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>../AI</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs SDL_image`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs SDL_mixer`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs SDL_ttf`</linkerOptionItem>
+            <linkerLibFileItem>../AI/dist/Release/GNU-Linux-x86/libai.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>`sdl-config --cflags --libs`</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="CApp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CApp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CBinaryHeap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CBinaryHeap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CCamera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CCamera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CCity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CCity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CCivilization.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CCivilization.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CDebugLogging.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CDebugLogging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CEventsManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CEventsManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CFindTileTypeProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CFindTileTypeProblem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CFontsManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CFontsManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CFramerate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CFramerate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CGame.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CGame.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CGame_Initialize.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CGame_Loop.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CGame_OnEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CPathFindingProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CPathFindingProblem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CPathFindingStateSpace.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CPathFindingStateSpace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CSoundManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CSoundManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CStateManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CStateManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CSurface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CSurface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CSurfaceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CSurfaceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CTile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CTile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CTilesetManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CTilesetManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CUnit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CUnit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataSetup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataSetup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Define.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Define_Sounds.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DrawingFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DrawingFunctions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="alphaBlit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="maps/1.map" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="maps/1.map.ORIG" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs SDL_image`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs SDL_mixer`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs SDL_ttf`</linkerOptionItem>
+          </linkerLibItems>
+          <commandLine>`sdl-config --cflags --libs`</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="CApp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CApp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CBinaryHeap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CBinaryHeap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CCamera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CCamera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CCity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CCity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CCivilization.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CCivilization.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CDebugLogging.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CDebugLogging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CEventsManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CEventsManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CFindTileTypeProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CFindTileTypeProblem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CFontsManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CFontsManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CFramerate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CFramerate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CGame.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CGame.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CGame_Initialize.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CGame_Loop.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CGame_OnEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CPathFindingProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CPathFindingProblem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CPathFindingStateSpace.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CPathFindingStateSpace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CSoundManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CSoundManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CState.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CState.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CStateManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CStateManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CSurface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CSurface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CSurfaceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CSurfaceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CTile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CTile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CTilesetManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CTilesetManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CUnit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CUnit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataSetup.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataSetup.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Define.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Define_Sounds.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DrawingFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DrawingFunctions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="alphaBlit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="maps/1.map" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="maps/1.map.ORIG" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
