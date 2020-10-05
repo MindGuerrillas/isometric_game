@@ -1,0 +1,74 @@
+========================================
+Welcome to Freeland Graphic Tilesets 2.0
+========================================
+------
+$Name: freeciv-freeland-2_0_0 $
+------
+
+This is release 2.0.0.
+
+-----------------------------------------------------------------------------		
+
+1. Introduction
+
+Freeland is an isometric Graphics Tileset for Freeciv game with high quality 
+graphic, using the more complex graphics system offered by Freeciv client with more 
+than thousand tile for base terrains (arctic, desert, grassland, plains, sea 
+and tundra).
+This tileset is distributed in three different set of tiles (3 different tarball):
+- freeland-normal (normal size 64x32)
+- freeland-medium (medium size 96x48)
+- freeland-big (big size 128x64)
+
+For more info see:
+- NEWS file for history news.
+- Freeciv forum (http://forum.freeciv.org):
+	~ "Art and tilesets" --> "New GPL tilesets - Freeland" (http://forum.freeciv.org/viewtopic.php?t=1648).
+	~ "General discussion" --> "Freeland - tech support" (http://forum.freeciv.org/viewtopic.php?t=1785).
+
+-----------------------------------------------------------------------------		
+
+2. Software requirements
+
+Freeland 2.0.0 require a Freeciv 2.1 distribution.
+- on Linux/Unix require the gtk client (cairo patch recommanded) or the sdl client.
+- on Windows require the "Freeciv-2.1.x-win32-setup.exe" or "Freeciv-2.1.x-win32-sdl-setup.exe"
+  distribution. The gtk version seems to crash on starting.
+
+-----------------------------------------------------------------------------		
+
+3. Hardware requirements
+
+I try it on a Pentium 4 1200MHz machine with 500MB of RAM and true color resolution. 
+With only 256MB of RAM the big tileset seems to have trouble on display colors of 
+some tile (this problem not arise with sdl client as reported on the forum by user Hima).
+
+-----------------------------------------------------------------------------		
+
+4. Installation
+
+- Download tarball from Freeciv download Extras page http://www.freeciv.org/index.php/Extras
+  or from ftp://ftp.freeciv.org/freeciv/contrib/tilesets/freeland/. 
+- Unpack the tarball on your Freeciv 2.1.x "data" directory. The tileset is 
+  selectable as any other Freeciv tileset (civclient -t set-name).
+- Enjoy
+
+-----------------------------------------------------------------------------		
+
+5. License
+
+Some graphics are adapted from GPL tilesets available for Freeciv (isotrident,amplio).
+All other graphics/textures used in this work are created from scratch, or derived with 
+image manipulation from the great GPL photo collection of Susanna Gross, available 
+at http://strike.colorado.edu.
+
+This work is licensed under the GNU GENERAL PUBLIC LICENSE V.2
+View COPYING for more details.
+
+-----------------------------------------------------------------------------		
+
+6. Author
+
+Peter Arbor <peter.arbor@gmail.com>
+
+-----------------------------------------------------------------------------		
